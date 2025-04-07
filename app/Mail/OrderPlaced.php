@@ -24,7 +24,7 @@ class OrderPlaced extends Mailable
 
     public function build()
     {
-        return $this->subject('Đơn hàng #' . $this->order->id . ' đã được đặt  💐 - giá trị đơn hàng;' )
+        return $this->subject('Đơn hàng #' . $this->order->id . ' đã được đặt  💐' )
                     ->view('emails.order_placed');
     }
 }
